@@ -4,6 +4,12 @@ Cross compiled gdb for use on arch linux,
         ./configure  --without-guile --host=x86_64-build_pc-linux-gnu --target=xtensa-esp32-elf
 	make
 
+
+http://www.linuxfromscratch.org/blfs/view/cvs/general/gdb.html
+
+cp /usr/bin/ar x86_64-build_pc-linux-gnu-ar
+
+
 To install them (by default in /usr/local/bin, /usr/local/lib, etc),
 then do:
 	make install
