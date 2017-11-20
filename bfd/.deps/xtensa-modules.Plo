@@ -1,0 +1,11 @@
+xtensa-modules.lo: xtensa-modules.c /usr/include/stdc-predef.h \
+ ../include/ansidecl.h ../include/xtensa-isa.h \
+ ../include/xtensa-isa-internal.h
+
+/usr/include/stdc-predef.h:
+
+../include/ansidecl.h:
+
+../include/xtensa-isa.h:
+
+../include/xtensa-isa-internal.h:
