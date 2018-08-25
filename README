@@ -5,6 +5,12 @@ Cross compiled gdb for use on arch linux,
 	make
 
 
+If you are building this for use with qemu, consider doing.
+
+    cd gdb
+    cp xtensa-config.c.qemu xtensa-config.c
+
+
 http://www.linuxfromscratch.org/blfs/view/cvs/general/gdb.html
 
 cp /usr/bin/ar x86_64-build_pc-linux-gnu-ar
