@@ -1,14 +1,17 @@
 Cross compiled gdb for use on arch linux,
 
-
-        ./configure  --without-guile --host=x86_64-build_pc-linux-gnu --target=xtensa-esp32-elf
+	./configure --with-python=/usr/bin/python2.7 --without-guile --host=x86_64-build_pc-linux-gnu --target=xtensa-esp32-elf
 	make
 
+	
 
 If you are building this for use with qemu, consider doing.
 
     cd gdb
     cp xtensa-config.c.qemu xtensa-config.c
+
+When starting this copy of gdb consider starting with option
+--data-directory ~/esp/qemu_esp32/gdb/
 
 
 http://www.linuxfromscratch.org/blfs/view/cvs/general/gdb.html
